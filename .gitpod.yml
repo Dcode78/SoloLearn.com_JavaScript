@@ -1,13 +1,13 @@
 # List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
 tasks:
-  - name : Terminal 1
-    before : echo 'before script' 
-    init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
+  - name: Terminal 1
+    before: echo 'before script' 
+    init: echo 'init script'
     command: echo 'start script'
-  - name : Terminal 2
+  - name: Terminal 2
     init: npm install
     command: npm run dev
-  - name : Terminal 3
+  - name: Terminal 3
     init: echo 'This is Terminal 3'
     command: echo 'Hello from Terminal 3'
 
@@ -16,7 +16,7 @@ tasks:
 ports:
   - name: Frontend
     description: Port 3000 for the frontend
-    port: 3000
-    onOpen: open-preview
+    port: 8080
+    onOpen: open-browser
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
