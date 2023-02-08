@@ -21,6 +21,7 @@ var p1 = new person("John", 31, "green", 183);
 console.log(p1.name);
 console.log(p1['age']);
 console.log(p1['favColor']);
+console.log(p1.favColor);
 console.log(p1.height);
    
   
