@@ -2,7 +2,6 @@
 tasks:
   - name : Terminal 1
     before : echo 'before script' 
-    #name: Script Task
     init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
     command: echo 'start script'
   - name : Terminal 2
